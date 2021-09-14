@@ -1,10 +1,15 @@
 import React from 'react'
 
-function navigationItem() {
+import classes from './NavigationItem.css'
+
+function navigationItem(props) {
     return (
-        <div>
-            
-        </div>
+        <div className={classes.NavigationItem}>
+            <a
+                href='{props.link}'
+                className={props.active ? classes.active : null}
+            >{props.children}</a>
+        </div >
     )
 }
 

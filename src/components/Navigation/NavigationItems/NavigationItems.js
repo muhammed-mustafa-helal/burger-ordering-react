@@ -1,11 +1,13 @@
 import React from 'react'
 
+import classes from './NavigationItems.css'
+import NavigationItem from './NavigationItem/NavigationItem'
+
 export default function navigationItems() {
     return (
-        <ul>
-            <li>
-                <a href='/'>A link</a>
-            </li>
+        <ul className={classes.NavigationItems}>
+            <NavigationItem link='/' active>Burder Builder</NavigationItem>
+            <NavigationItem link='/'>Checkout</NavigationItem>
         </ul>
     )
 }
