@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
 import Button from '../../UI/Button/Button'
+import classes from './OrderSummary'
 
 class OrderSummary extends Component {
     render() {

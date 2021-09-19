@@ -28,8 +28,8 @@ class BurgerBuilder extends Component {
         loading: false,
         error: false
     }
-
-    componentDidMount() {
+    constructor(props) {
+        super(props);
         axios.get('https://burger-app-388fb-default-rtdb.europe-west1.firebasedatabase.app/ingredients.json')
             .then(response => {
                 this.setState({ ingredients: response.data });
