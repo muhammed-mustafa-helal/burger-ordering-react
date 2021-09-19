@@ -9,3 +9,7 @@
     width: 500px;
   }
 }
+
+.BurgerPicture {
+  overflow: hidden;
+}
